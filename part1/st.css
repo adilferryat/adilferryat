@@ -1,0 +1,118 @@
+#c {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    flex-basis: 60%;
+    /* Adjust the value as needed */
+}
+
+.item img {
+    width: 90px;
+}
+
+p {
+    border: 20cm;
+    color: rgba(0, 0, 0, 0.765);
+}
+
+.item {
+    background-color: whitesmoke;
+    border: 2px solid rgb(104, 110, 21);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #605050;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.button,
+.button:visited {
+    color: #ffffff;
+    /* Set the desired color for the link and visited link */
+}
+
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    /* Set the desired color for the link on hover and focus */
+}
+
+.button:active {
+    color: #ffffff;
+    /* Set the desired color for the link when active (clicked) */
+}
+
+h1 {
+    color: #505d60;
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 5px dashed rgb(62, 5, 78);
+    border-width: 3px;
+    padding: 8px;
+}
+
+body {
+    background: linear-gradient(to top, #a18ca9, #c8dde6);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(62, 5, 78);
+}
+
+#s {
+    display: flex;
+}
+
+.introction,
+.contact,
+.friends {
+    flex-basis: 50.33%;
+    position: relative;
+    padding: 5px;
+}
+
+#r {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact,
+.friends {
+    flex-basis: 108%;
+    border: 1px solid rgb(2, 27, 39);
+    padding: 6px;
+}
+
+.introction::before,
+.contact::before,
+.friends::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid;
+    background: linear-gradient(to top, #a18ca9, #c8dde6);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    z-index: -1;
+    /* Adjust the z-index to send the pseudo-element behind the text */
+}
